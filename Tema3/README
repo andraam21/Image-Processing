@@ -1,0 +1,18 @@
+Programul incepe cu parserul ce salveaza comenzile intr-un vector de stringuri ce va fi folosit
+pentru a verifica ce functii se vor executa. Se aloca dinamic pointerii pentru structurile
+imaginilor si verificam daca operatia s-a efectuat cu succes. Urmeaza sa deschidem fisierul
+imagine in format binar pentru a retine fileheaderul, infoheaderul, cat si bitmapul ce il
+stocam intr-o matrice alocata dinamic in functie de dimensiunea pozei. Daca o salvam, deschidem 
+un fisier in output in care vom muta toate informatiile imaginii. In cazul in care inseram o 
+alta poza peste cea originala, retinem detaliile celei de-a doua imagini si verificam daca 
+aceasta depaseste sau nu dimensiunile celei initiale, astfel ca atunci cand vom face 
+overlapul este posibil ca imaginea sa fie decupata. In ceea ce priveste setarea culorii, salvam 
+cele trei variabile R, G, B, le schimbam tipul in char si le shiftam pentru a forma un 
+pixel colorat. Pentru a trasa o linie am implememtat o functie ce calculeaza coordonatele in 
+matrice ce unesc doua puncte, urmand sa le schimbam culoarea in functie de grosimea setata. 
+Verificam si in acest caz daca linia depaseste in vreun punct bitmapul imaginii originale. 
+Pentru dreptunghi si triunghi se procedeaza in acelasi mod, trasand liniile intre coordonatele 
+punctelor ce formeaza figura geometrica. Operatia de fill am implementat-o cu ajutorul unei 
+functii recursive ce verifica pe rand vecinii pixelului ce au aceeasi culoare cu cel original, 
+urmand sa ii coloreze cu noua culoare setata. In final eliberam tot ce am alocat dinamic 
+anterior (matricele pentru bitmap si structurile pentru headerul imaginii).
