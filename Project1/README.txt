@@ -1,5 +1,5 @@
 task1:	Pentru a fi mai usor de lucrat cu numarul, am folosit un vector in care sa salvam
-valoarea acestuia in binar.Pentru n(numarul de operatii) si dim(dimensiunea) l-am prelucrat
+valoarea acestuia in binar. Pentru n(numarul de operatii) si dim(dimensiunea) l-am prelucrat
 prin shiftari, dupa care am incrementat valorile.Pentru a vedea care sunt operatiile am creat
 o functie care citeste valoarea in binar a numarului initial si intoare o variabila de tip
 char.Aceste valori le salvam intr-un alt vector, pentru a avea toate operatiile la un loc. 
